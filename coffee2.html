@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Responsive Circles</title>
+</head>
+<body class="body" >
+    <div class="container">
+        <div class="circle">
+            <div class="inner-circle">
+                <div class="innermost-circle">
+                    <img class="img" src='https://png.pngtree.com/png-clipart/20220125/ourmid/pngtree-leaves-spring-green-decorative-border-png-image_4364434.png' alt="Image">
+                    <span class="project">
+                        <h3 class="project1">Project</h3>
+                        <h3 class="project2">Project</h3> 
+                    </span>
+                
+                    <button class="cofee">
+                        <a class="a" href="./project1.html">
+                            <span class="cofe"> Coffee</span>
+                        </a>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <div class="shop"><span class="h1">&#9749 Lovely day</span></div>
+            <div class="caption">"Life is beautiful
+                <span class="but">.But</span>
+                coffee makes it "<span class="span"></span>".
+            </div>
+        </div>
+    </div>
+</body>
+<style>  
+
+a{
+    text-decoration: none;
+    color: rgb(152, 111, 51);
+}
+.cofee {
+        color: rgb(152, 111, 51);
+        border-radius: 11px;
+        background: #2d3a02;
+        border: rgba(57, 35, 6, 0.893);
+        border-style: solid;
+        border-width: 4px;
+        cursor: pointer;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+        box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.8);
+        text-decoration: none;
+        width: 13em;
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+        justify-content: center;
+        -webkit-text-stroke: 1px #1a170e;
+        margin-top: 22.9vw; /* Adjust this distance */
+        margin-left: 27vw; /* Adjust this distance */
+        transition: all 0.7s ease;
+        white-space: nowrap;
+        overflow: hidden;
+        max-block-size: 50px;
+        min-block-size: 30px;
+        position: sticky;
+        margin-right: none;
+        margin-bottom: none;
+        padding:2%,2%;
+    }
+
+    .cofee .cofe {
+        font-size: 3em;
+        align-items: center;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+        border-color: #efedec;
+        text-decoration: none;
+        font-style: normal;
+        padding-top: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 3px;
+        -webkit-text-stroke: 1px #1a170e;
+        transition: all 0.7s ease;
+        white-space: nowrap;
+        justify-content: center;
+    }
+
+    @media (max-width: 700px) {
+    .cofee {
+        font-size: 2.5vw;
+        padding-top: 3px;
+        margin-top: 29vw;
+        margin-left: 15vw;
+    }
+    .cofee .cofe {
+        font-size: 7vw; /* Increase the font size of .cofe with .cofee */
+        padding-left: 0.5em;
+        padding-right: 16px;
+        padding-top: 12vw;
+        padding-bottom: 1.7em;
+    }
+    
+}
+
+        .cofee:hover{    
+            box-shadow : inset 4px 4px 4px rgba(0, 0, 0, 0.9);
+            border-color:rgb(34, 20, 6);
+            background-color: #4c250b;
+            border-width:3px;
+            animation: shade 30s ease-in-out;
+            color: #daa937;
+        }
+
+        .cofee:active{
+            color:  #fb9255;
+            background-color: rgb(50, 32, 2);
+            box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.6);
+            border-color: #7e441e;
+            animation: pulsate 20s ease-in-out;
+        }
+
+        @keyframes pulsate {
+            0% {
+                box-shadow: 0 0 25px #fcfffd, 0 0 10px #f0f4f5;
+            }
+        }
+
+        @keyframes shade {
+            0% {
+                box-shadow: 0 0 35px #f38b04, 0 0 10px #04a8f4;
+            }
+        }
+
+        .cofe:active{
+            text-shadow: 3px 3px 3px rgba(9, 9, 9,1.5) ;
+            border-radius: 4px;
+            padding-left: none;
+            text-shadow: 4px 4px 2px rgba(0, 0, 0,2);
+        }
+
+        .caption{
+            position:absolute;
+            font: size 35px;
+            color: #319c13;
+            font-size:26px;  
+            border:none;
+            justify-content: center;
+            font-weight:550px;
+            cursor:default;
+            }
+
+            .shop{
+            font-family:Arial, Helvetica, sans-serif;
+            color: #06806a;
+            font-weight:1px;
+            text-shadow: 4px 4px 4px  rgba(31, 20, 2, 1);
+            border:none;
+            padding-right: 4vw;
+            cursor: default;
+            margin-bottom:5vw;
+            }
+
+
+        .h1:hover{
+            animation: pal 30s ease-in-out;
+            color: antiquewhite;
+            }
+
+        @keyframes pal {
+            0% {
+                text-shadow: 0 0 45px #3300ff, 0 0 5px #4400ff;
+            }
+        }
+
+
+
+        .span {
+            font-family: "montserrat",sans-serif;
+            position: relative;
+            font-size: 33.6px;
+            font-weight: bolder;
+            color: #135205;
+            }
+
+        .span::before{
+            content:" Better";
+            color: #b6f6c9;
+            animation: words 20s infinite; 
+        }
+
+        .span::after{
+            content: "";
+            position: absolute;  
+            height: 100%;
+        } 
+
+        @keyframes words {
+            0%,20%{
+                content: "Better";
+            }
+            20%,40%{
+                content: "Perfect";
+            }
+            40%,60%{
+                content: "Awesome";
+            }
+            60%,80%{
+                content: "Good";
+            }
+            80%,100%{
+                content: "joyful";
+            }
+        }
+
+        @keyframes typing {
+            10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+            width: 0;
+            }
+            5%,20%,25%,40%,45%,60%,65%,80%,85%{
+                    width: calc (100%  8px);
+            }
+        }
+
+        .but {
+            color: #063107;
+            font-size: 34.6px;
+            font-weight:bolder;
+    }
+
+        .p {
+            font-size: 20px;
+            margin-left: 30px;
+    }
+
+        .h1 {
+            width: 610px;
+            font-size: 70px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 97.5vh;
+            border-radius: 9px;
+            box-shadow: inset 14px 15px 30px rgba(0, 0, 0, 0.7);
+            background:linear-gradient(180deg,rgb(50, 72, 4),rgb(26, 71, 3),rgb(1, 49, 32));
+        }
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .circle {
+            position: relative;
+            width: 60vmin; /* Adjust this value as needed */
+            height: 60vmin; /* Adjust this value as needed */
+            border-radius: 50%; /* Create a circle */
+            transition: all 0.3s ease; /* Smooth transition when resizing */
+            overflow: hidden; /* Hide the overflow of the inner circle */
+            margin-left: 30px;
+            margin-right: 50px;
+            margin-top: 20px;
+            min-width: 45vw;
+            min-height: 45vw;
+            box-shadow: 4px 4px 25px rgba(0, 0, 0, 2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            display: grid;
+        }
+
+        .inner-circle {
+            position: absolute;
+            width: calc(100% ); /* Adjust the size of the inner circle */
+            height: calc(100% ); /* Adjust the size of the inner circle */
+            border-radius: 50%; /* Create a circle */
+            transition: all 5s ease; /* Smooth transition when resizing */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            background-color:rgb(81, 111, 80);
+            box-shadow:inset   3px 4px 9px rgba(21, 20, 20, .8);
+        }
+
+        .innermost-circle {
+            position: absolute;
+            width: 100%; /* Adjust the size of the innermost circle */
+            height: 100%; /* Adjust the size of the innermost circle */
+            width: calc(100% - 7mm); /* Adjust the size of the inner circle */
+            height: calc(100% - 7mm); /* Adjust the size of the inner circle */
+            border-radius: 50%; /* Create a circle */
+            transition: all 0.1s ease; /* Smooth transition when resizing */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden; /* Hide the overflow of the image */
+            background-color:rgba(43, 63, 4, 0.883);
+            box-shadow:inset   7px 7px 20px rgba(0, 0, 0, 0.5);
+            display: grid;    
+        }
+
+        .circle:hover{
+            animation: sha 30s ease-in-out;
+        }
+        @keyframes sha {
+            0% {
+                box-shadow: 0 0 45px #cef0f4, 0 0 50px #f4f7f4;
+            }
+        }
+
+        .innermost-circle img {
+            width:100%; /* Make the image fill the innermost circle */
+            height: 100%; /* Make the image fill the innermost circle */
+            object-fit: cover;
+            
+        }
+
+        .img{
+            border-radius: 50%;
+            position:absolute;
+            left: 0.7px;
+            transform: rotateX(178deg);
+            text-shadow: inset 4px 4px 30px rgba(0, 0, 0, 1) ;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+            background-size: cover;
+        }
+
+        .text {
+            padding-left: 10px; /* Add some space between circles and text */
+        }
+        .project {
+            align-items: center;
+            justify-content:center;
+            display: flex;
+            white-space: nowrap; 
+            overflow: hidden; 
+            display: flex;
+            height: 47vh;
+            margin: 0;
+            min-width: 14px;
+            position: fixed;
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; 
+}
+
+        .project1 {
+            display: flex;
+            -webkit-text-stroke: 1px #1a170e;
+            padding-left: 20%;
+            bottom: 15%;
+            left: 6%;
+            top:5%;
+            -webkit-text-stroke: 2px #3c2306;
+            position: fixed;
+            text-shadow: 1px 1px 3px rgb(130, 82, 5);
+            color: transparent;
+            transition: all 0.1s ease;
+            white-space: nowrap;
+            }
+
+        .project2 {
+            display: flex;
+            -webkit-text-stroke: 1px #1a170e;
+            padding-left: 20%;
+            left: 6%;
+            top: 5%;
+            color: #41210c;
+            position: fixed;
+            animation: animate 4s ease-in-out infinite;
+            transition: all 0.1s ease;/* Smooth transition when resizing */
+            font-size: 6vw; /* Adjust the font size as needed */
+            /* Default font size */
+            white-space: nowrap;
+            }
+
+        @media (max-width: 800vw) {
+            .project1 {
+                font-size: 9vw; /* Adjust font size for smaller screens*/
+            }
+            .project2 {
+                font-size: 9vw; /* Adjust font size for smaller screens */
+            }
+    }
+
+        @media (max-width: 500vw) {
+            .project1 {
+                font-size: 9vw; /* Adjust font size for even smaller screens */
+            }
+            .project2 {
+                font-size: 9vw; /* Adjust font size for even smaller screens */
+            }
+
+    
+        @keyframes animate {
+            0%, 100% {
+                clip-path: polygon(0 44%, 14% 39%, 29% 40%, 39% 48%, 51% 56%, 62% 62%, 75% 64%, 90% 65%, 100% 61%, 100% 99%, 0% 99%);
+                }
+            50% {
+                clip-path: polygon(0 65%, 32% 69%, 27% 68%, 49% 60%, 59% 53%, 61% 46%, 74% 43%, 88% 41%, 100% 41%, 100% 99%, 0% 99%);
+                }
+
+            }
+        }
+
+        @media (max-width: 850px) {
+            .container {
+                flex-direction: column; /* Stack circles and text on smaller screens */
+                align-items: center; /* Align items to the center on smaller screens */
+            }
+
+            .circle {
+                width: -50vmin; /* Adjust the size for smaller screens */
+                height: -50vmin; /* Adjust the size for smaller screens */
+                top: -10vmin;
+                left:5vmin; /* Move the circles upward */
+            }
+
+
+            .inner-circle {
+                width: calc(100%); /* Adjust the size of the inner circle for smaller screens */
+                height: calc(100%); /* Adjust the size of the inner circle for smaller screens */
+            }
+
+            .innermost-circle {
+                width: calc(100%); /* Adjust the size of the innermost circle for smaller screens */
+                height:calc( 100%); /* Adjust the size of the innermost circle for smaller screens */
+            }
+
+            .text {
+                padding: 0; /* Remove padding on smaller screens */
+            }
+            
+            } 
+            
+
+        /* Add animation for increasing inner-circle size */
+        
+
+            </style>
+            </html>

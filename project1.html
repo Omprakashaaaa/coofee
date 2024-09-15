@@ -1,0 +1,1146 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <title>Frontend Framework</title>
+</head>
+
+<body class="body">
+    <nav>
+        <div class="logo" style="display: flex;align-items: center;">
+            <span class="logo1">
+                <img src="https://www.pngmart.com/files/22/The-Professor-Money-Heist-PNG-Photos.png"  alt="Logo">
+
+                <p>Lovely day</p>
+            </span>
+            
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="uer-info">
+                        <img src="https://www.pngmart.com/files/22/The-Professor-Money-Heist-PNG-Photos.png"  alt="Logo">
+                        <h4>om prakash</h4>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"  alt="Logo" >
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3524/3524659.png"  alt="Logo" >
+                        <p>Settings & privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="https://cdn0.iconfinder.com/data/icons/entypo/92/help-512.png"  alt="Logo" >
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="..//loginpage1.html" class="sub-menu-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1330/1330162.png" alt="Logo" >
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+            </div>
+        
+        </div>
+        <aside class="sidebar" id="sidebar">
+            
+            <div class="sidebar-content">
+                <div class="sidebar-header">
+                    <h2>Lovely Day</h2>
+                </div>
+                
+                <div class="cart">
+                    <h3>Shopping Cart</h3><br>
+                    <ul id="cart-items"></ul>
+                    <div id="total-price">Total: $0.00</div>
+                    <button class="shop" id="buy-button">Shop<div class="tooltip">you don't have sufficient amount</div></button>
+                    <button id="clear-button">Clear</button>
+                </div>
+                <div class="close-btn" id="close-btn">
+                    <i class="fas fa-times"></i> Close
+                </div>
+            </div>
+        </aside>
+            <ul class="nav-links">
+                <li><a href="https://www.web-leb.com/code">Home</a></li>
+                <li><a  href="https://www.web-leb.com/code">Solutions</a></li>
+                <li><a  href="https://www.web-leb.com/code">Products  </a></li>
+                <li><a  href="https://www.web-leb.com/code">Services  </a></li>
+                <li><a  href="https://www.web-leb.com/code">Contact Us</a></li>
+                <li><button class="login-button" href="https://www.web-leb.com/code">Login</button></li> 
+                
+            </ul><header>
+                    <div class="hamburger" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </header>
+    </nav>
+    <main>
+        <div class="container">
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg/330px-Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg" alt="">
+                            <h3 >&#9749 Espresso<br>150/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>Espresso coffee is a concentrated Italian coffee brewed by
+                                    forcing hot water through finely-ground coffee beans.</p><br>
+                                <button  class="order" data-name="Espresso &nbsp &nbsp&nbsp" data-price="150.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Doppio.jpg/330px-Doppio.jpg" alt="">
+                        <h3 >&#9749Doppio <br>245/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>"Doppio coffee is a double shot of espresso served in a single cup."</p><br>
+
+                                <button  class="order" data-name="Doppio &nbsp &nbsp &nbsp &nbsp" data-price="245.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Caff%C3%A8_Espresso_Macchiato_Schiumato.jpg/375px-Caff%C3%A8_Espresso_Macchiato_Schiumato.jpg" alt="">
+                        <h3 >&#9749Macchiato<br>299/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>A macchiato is a strong espresso "stained" with a small amount of frothy milk.</p>
+                                
+                                <button  class="order" data-name="Macchiato &nbsp&nbsp" data-price="299.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/330px-Cappuccino_at_Sightglass_Coffee.jpg" alt="">
+                        <h3 >&#9749Cappuccino<br>220/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>A cappuccino is a creamy espresso-based coffee topped with frothy milk foam.</p>
+                                
+                                <button class="order" data-name="Cappuccino&nbsp" data-price="220.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Flat_white_coffee_with_pretty_feather_pattern.jpg/330px-Flat_white_coffee_with_pretty_feather_pattern.jpg" alt="">
+                        <h3 >&#9749Flat White<br>275/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>A flat white is a creamy espresso-based coffee drink originating from Australia, 
+                                    known for its velvety microfoam and balanced flavor.</p>
+                                
+                                <button class="order" data-name="Flat White &nbsp&nbsp";  data-price="275.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Caf%C3%A9_au_lait.jpg/375px-Caf%C3%A9_au_lait.jpg" alt="">
+                        <h3 >&#9749 Café au Lait<br>100/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>"Café au Lait is a creamy and delicious coffee made with equal parts of brewed coffee and steamed milk."</p>
+                                
+                                <button class="order"data-name="Café au Lait" data-price="100.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Two_Turkish_coffee.jpg/330px-Two_Turkish_coffee.jpg" alt="">
+                        <h3 >&#9749 Turkish<br>199/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>Turkish coffee is a traditional, 
+                                    finely-ground coffee preparation method infused with rich flavors and served in a small cup.</p>
+                                
+                                <button class="order" data-name="Turkish &nbsp &nbsp &nbsp&nbsp" data-price="199.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Irish_coffee_glass.jpg/375px-Irish_coffee_glass.jpg" alt="">
+                        <h3 >&#9749Irish<br>245/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>Irish coffee is a delightful blend of hot coffee, 
+                                    Irish whiskey,
+                                    sugar, and topped with a layer of whipped cream.</p>
+                                
+                                <button class="order" data-name="Irish &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp" data-price="245.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Espresso_Americano.jpeg/375px-Espresso_Americano.jpeg" alt="">
+                        <h3 >&#9749Americano<br>340/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>An Americano coffee is made by diluting espresso with hot water,
+                                    resulting in a milder flavor and larger serving.</p>
+                                
+                                <button class="order" data-name="Americano &nbsp" data-price="340.00">ADD TO CART</button>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgOXaj6QQi1J4UMig3ROqLFDi9iSp9HFiQ6ZnCn8uV9w&s" alt="">
+                        <h3 >&#9749Long Black<br>160/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>A long black coffee is a simple and bold espresso-based
+                                    beverage made by pouring a shot of espresso over hot water.</p>
+                                
+                                <button class="order" data-name="Long Black &nbsp" data-price="160.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWl0iSbxrKMunb1ZymOWQkZ-OulPiowqi3AwI2NBiRfe9S5uo-i8lykjv8yRqicl17xbU&usqp=CAU" alt="">
+                        <h3 >&#9749 Vienna Melt<br>390/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>A Vienna Melt coffee is a rich and indulgent espresso-based 
+                                    drink infused with chocolate and topped with whipped cream.</p>
+                                
+                                <button class="order" data-name="Vienna Melt&nbsp" data-price="390.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3s0NxrrJuaoIS8RIeA2c4qnMhUvS9LR0qpqNydztEWg&s" alt="">
+                        <h3 >&#9749Latte<br>200/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>A latte coffee is a creamy espresso-based drink made with steamed milk.</p>
+                                
+                                <button class="order" data-name="Latte &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp" data-price="200.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkb2XBoZ5Jb7l9A3wofiU2GYjhMMxlyN5dGA&usqp=CAU" alt="">
+                        <h3 >&#9749Red eye<br>215/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>A red eye coffee, also called a "shot in the dark,"
+                                    consists of a regular brewed coffee with a shot of espresso added to it.
+                                    </p>
+                                
+                                <button class="order" data-name="Red eye &nbsp &nbsp &nbsp" data-price="215.00">ADD TO CART</button>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7H5e4x7cN9cGd-mC9NJ6jJeMra3UPdJt7LrV9Mhxgrw&s" alt="">
+                        <h3 >&#9749Affogato<br>375/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>An affogato, more traditionally known as
+                                    "affogato al caffè", is an Italian coffee-based dessert.</p>
+                                
+                                <button class="order" data-name="Affogato &nbsp &nbsp &nbsp" data-price="375.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLhqgOi6u9yRE2ZO1GmrswC1ZhGJX2J-gBwrsA2uTl&s" alt="">
+                        <h3 >&#9749 cold brew<br>125/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>It's sweeter and smoother Because the coffee grounds aren't exposed to high temps,
+                                    cold brew coffee usually tastes more flavorful and less bitter.</p>
+                                
+                                <button class="order" data-name="cold brew &nbsp &nbsp" data-price="125.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMTN4Ogfm0aSy-eW0nrqMez0mhdElt2ZcwvhruSwoSkA&s" alt="">
+                        <h3 >&#9749Iced coffee<br>50/-</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="products">
+                            <div class="product">
+                                <p>Iced coffee is made from regularly brewed hot coffee that's chilled and then served over ice.</p>
+                                
+                                <button class="order" data-name="Iced coffee &nbsp &nbsp" data-price="50.00">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+</body>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.getElementById("hamburger");
+        const sidebar = document.getElementById("sidebar");
+        const closeBtn = document.getElementById("close-btn");
+        const buyButton = document.getElementById("buy-button");
+        const clearButton = document.getElementById("clear-button");
+        const cartItems = document.getElementById("cart-items");
+        const totalPrice = document.getElementById("total-price");
+    
+        menuIcon.addEventListener("click", function () {
+            sidebar.style.right = "0";
+            document.body.classList.add('sidebar-open');
+        });
+    
+        closeBtn.addEventListener("click", function () {
+            sidebar.style.right = "-300px";
+            document.body.classList.remove('sidebar-open');
+        });
+    
+        const orderButtons = document.querySelectorAll(".order");
+    
+        let cart = [];
+        let total = 0;
+    
+        orderButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+                const name = button.getAttribute("data-name");
+                const price = parseFloat(button.getAttribute("data-price"));
+                cart.push({ name, price });
+                updateCart();
+            });
+        });
+    
+        function updateCart() {
+            cartItems.innerHTML = "";
+            total = 0;
+            cart.forEach((item, index) => {
+                const li = document.createElement("li");
+                li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+    
+                // Create a "Remove" button for each item
+                const removeButton = document.createElement("button");
+                removeButton.textContent = "-";
+                removeButton.className = "remove-from-cart";
+    
+                removeButton.addEventListener("click", function () {
+                    // Remove the item from the cart array
+                    cart.splice(index, 1);
+                    // Update the cart display
+                    updateCart();
+                });
+    
+                // Append the "Remove" button to the list item
+                li.appendChild(removeButton);
+    
+                cartItems.appendChild(li);
+    
+                total += item.price;
+            });
+    
+            // Update the total price
+            totalPrice.textContent = `Total: $${total.toFixed(2)}`;
+        }
+    
+        // Clear the cart when the "Clear" button is clicked
+        clearButton.addEventListener("click", function () {
+            cart = [];
+            updateCart();
+        });
+    });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const logoImage = document.querySelector(".logo1 img");
+                const subMenu = document.getElementById("subMenu");
+            
+                logoImage.addEventListener("click", function () {
+                    subMenu.classList.toggle("open-menu");
+                });
+            });
+        </script>
+        <style>
+    .logo1 img {
+        max-width: 48px;
+        max-height: 48px;
+        padding-left: 10px;
+    }
+    
+    .logo1 p {
+        color: #097070;
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-left: 10px;
+        width: 145px;
+    }
+    
+    .sub-menu-wrap {
+        position: absolute;
+        top: 15%;
+        width: 260px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        margin-top: 59px;
+    }
+    
+    .sub-menu-wrap.open-menu {
+        max-height: 400px;
+    }
+    
+    .sub-menu {
+        background: #fff;
+        padding: 20px;
+        margin: 10px;
+        margin-left: 5px;
+        padding-top: 6px;
+        border-radius: 3%;
+        padding-left: 7px;
+        background-color: #122321f8;
+    }
+    
+    .uer-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .uer-info h4 {
+        font-weight: 500;
+        margin-left: -7px;
+        color: aliceblue;
+    }
+    
+    .uer-info img {
+        margin-left: 20px;
+        border-radius: 50%;
+        margin-right: 15px;
+        max-width: 60px;
+        max-height: 60px;
+    }
+    
+    .sub-menu hr {
+        border: 0;
+        height: 1px;
+        width: 100%;
+        background: #ccc;
+        margin: 15px 0 10px;
+    }
+    
+    .sub-menu-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #525252;
+        margin: 12px 0;
+        grid-template-columns: 2px;
+        font-size: 14px;
+    }
+    
+    .sub-menu-link p {
+        width: 100%;
+        font-size: 12px;
+        padding-left: -10px;
+    }
+    
+    .sub-menu-link img {
+        background: #045047b5;
+        border-radius: 50%;
+        padding: 8px;
+        margin-right: 0px;
+        max-width: 20px;
+        max-height: 20px;
+    }
+    
+    .sub-menu-link span {
+        font-size: 22px;
+        transition: transform 0.5s;
+    }
+    
+    .sub-menu-link:hover span {
+        transform: translateX(5px);
+    }
+    
+    .sub-menu-link:hover p {
+        font-weight: 600;
+        font-size: 12px;
+    }
+        img{
+            width :300px;
+            height: 125px;
+            object-fit:fill;
+        }
+    body.sidebar-open #sidebar {
+        z-index: 100;
+    }
+    body.sidebar-open #sidebar {
+        z-index: 100;
+    }
+
+    .add{
+        padding-left: 2%;
+        color: #000000;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 2%;
+        border-radius: 20%;
+        border: none;
+        box-shadow:inset 3px 3px 3px rgb(2,5,6,0.7);
+        margin-bottom: 30%;
+    }
+    .Remove:hover{
+        background-color: rgb(246, 110, 244);
+    }
+    .add:hover{
+        background-color: rgb(246, 110, 244);
+    }
+    .Remove {
+        padding-left: 2.7%;
+        color: #000000;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 2.7%;
+        border-radius: 20%;
+        border: none;
+        box-shadow:inset 3px 3px 3px rgb(2,5,6,0.7);
+    }
+    .p{
+        padding-left: 99px;
+        color: #2d0421;
+        font-size: large;
+        font-weight:bold;
+    }
+        
+    *{
+        margin: 0;
+        padding: 0;
+        color: #f2f5f7;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        font-weight: 300;
+        }
+
+    .logo1{
+        cursor:context-menu;
+        width: 20px;
+        display: flex;
+    align-items: center;
+}
+        
+
+    .logo1 p:hover{
+        color:rgb(221, 204, 212);
+        animation: shaa 30s ease-in-out;
+        }
+
+        @keyframes shaa{
+            0%{
+                text-shadow: 0 0 15px #0ea8ce, 0 0 50px #0ecbf5;
+            }
+        }
+
+    .body1{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        }
+    header {
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav{
+        height: 5rem;
+        width: 100vw;
+        
+       
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        margin-top: -104em;
+        }
+
+        /*Styling logo*/
+    .logo{
+        padding:1vh 1vw;
+        text-align: center;
+        }
+    .logo img {
+        height: 5rem;
+        width: 5rem;
+        }
+
+        /*Styling Links*/
+    .nav-links{
+        display: flex;
+        list-style: none; 
+        width: 60vw;
+        padding:0 4vw;
+        justify-content: space-evenly;
+        align-items: center;
+        text-transform: uppercase;
+        margin-left: 120px;
+        
+        }
+    .nav-links li a{
+        text-decoration: none;
+        margin: 0 1vw;
+        }
+    .nav-links li a:hover {
+        color: #e6eef0;
+        animation: sha 30s ease-in-out;
+        }
+    .nav-links li {
+        position: relative;
+        }
+    .nav-links li a:hover::before{
+        width: 80%;
+        
+        }
+
+        /*Styling Buttons*/
+    .login-button{
+        background-color: transparent;
+        border: 1.5px solid #f2f5f7;
+        border-radius: 2em;
+        padding: 0.5rem 1rem;
+        left: 3vw;
+        font-size: 1rem;
+        cursor: pointer;
+        position: absolute;
+        top: -20px;
+        
+        }
+    .login-button:hover {
+        color: #131418;
+        background-color: #f2f5f7;
+        border:1.5px solid #f2f5f7;
+        transition: all ease-in-out 350ms;
+        animation: sha 30s ease-in-out;
+        }
+    @keyframes sha {
+            0% {
+                box-shadow: 0 0 15px #04e2ff, 0 0 50px #8a7a7a;
+            }
+        
+        }
+        
+    .join-button{
+        color: #131418;
+        background-color: #61DAFB;
+        border: 1.5px solid #61DAFB;
+        border-radius: 2em;
+        padding: 0.6rem 0.8rem;
+        font-size: 1rem;
+        cursor: pointer;
+        }
+    .join-button:hover {
+        color: #f2f5f7;
+        background-color: transparent;
+        border:1.5px solid #f2f5f7;
+        transition: all ease-in-out 350ms;
+        animation: sha 30s ease-in-out;
+        }
+
+        /*Styling Hamburger Icon*/
+    .hamburger div{
+        width: 30px;
+        height:3px;
+        background: #f2f5f7;
+        margin: 5px;
+        
+        }
+
+        /*Stying for small screens*/
+        
+    .nav{
+            position: fixed;
+            z-index: 3;
+        }
+    .hamburger{
+            position: fixed;
+            z-index: 2;
+            transition: all 0.7s ease;
+            margin-top: -40px;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+            top:9.6%;
+            right: 20px;
+        }
+
+    .sidebar {
+            width: 300px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            background: linear-gradient(180deg, #000000 7%, #312105 25%, rgb(39, 29, 3) 86%);
+            overflow-y: auto;
+            transition: 0.5s;
+            padding-top: 20px;
+        }
+
+        .sidebar-content {
+            padding: 20px;
+            color: white;
+}
+    .sidebar-header {
+            background: linear-gradient(180deg, #464444 2%, #111110 85%);
+            color: white;
+            padding: 5px;
+            text-align: center;
+            margin-top: -17px;
+            margin-bottom: 10px;
+            margin-left: 0;
+            margin-right: 0;
+            box-shadow: inset 0px 0px 20px black;
+            text-shadow: 0px 0px 10px rgb(137, 129, 129),0px 0px 1px rgb(235, 221, 221);
+            border-width: 20%;
+            font-weight: bold;
+}
+.sidebar-header h2 {
+    margin: 0;
+}
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.cart h3 {
+    font-size: 20px;
+    padding-top: 50px;
+    color: rgb(245, 167, 0);
+    text-shadow: 0px 0px 10px rgb(249, 178, 26);
+
+}
+.cart ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+
+
+.cart button {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f17dd2;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 3em;
+    font-weight: bold;
+    border-radius: 10%;
+    box-shadow: inset 9px 9px 17px rgb(134, 201, 255),inset -9px -9px 17px rgb(138, 217, 233);
+    
+}
+.cart button:hover{
+    background-color: #06bec7;
+    box-shadow: 1px 1px 5px white;
+}
+.shop .tooltip{
+    position: absolute;
+    background-color: gray;
+    margin-top: 7px;
+    margin-left: -4em;
+    margin-right: 8em;
+    width: 48%;
+    text-align: center;
+    height: 4.5%;
+    opacity: 0;
+    transition: opacity .5s;
+    color: #000000;
+}
+.shop:active .tooltip{
+    opacity: 1;
+}
+.close-btn {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(22, 183, 11);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size:17px;
+    font-weight: bold;
+    
+    box-shadow: inset 20px 10px 29px  rgb(37, 37, 35),inset -20px -10px 29px rgb(37, 37, 35) ;
+}
+.close-btn:hover{
+    background-color:   rgb(31, 84, 3);
+    box-shadow: 0px 0px 4px white;
+    
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product h2 {
+    margin: 0;
+}
+.product p {
+    margin: 5px 0;
+}
+
+.add-to-cart {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+@media screen and (max-width: 850px){
+    .nav-links{
+            position: fixed;
+            background: #131418;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(50px at 90% -20%);
+            -webkit-clip-path: circle(50px at 90% -10%);
+            transition: all 1s ease-out;
+            pointer-events: none;
+        }
+    .nav-links.open{
+            clip-path: circle(1000px at 90% -10%);
+            -webkit-clip-path: circle(1000px at 90% -10%);
+            pointer-events: all;
+        }
+    .nav-links li{
+            opacity: 0;
+        }
+    .nav-links li:nth-child(1){
+            transition: all 0.5s ease 0.2s;
+        }
+    .nav-links li:nth-child(2){
+            transition: all 0.5s ease 0.4s;
+        }
+    .nav-links li:nth-child(3){
+            transition: all 0.5s ease 0.6s;
+        }
+    .nav-links li:nth-child(4){
+            transition: all 0.5s ease 0.7s;
+        }
+    .nav-links li:nth-child(5){
+            transition: all 0.5s ease 0.8s;
+        }
+    .nav-links li:nth-child(6){
+            transition: all 0.5s ease 0.9s;
+            margin: 0;
+        }
+    .nav-links li:nth-child(7){
+            transition: all 0.5s ease 1s;
+            margin: 0;
+        }
+    li.fade{
+            opacity: 1;
+        }
+        
+        /*Animating Hamburger Icon on Click*/
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+        }
+    .toggle .line2{
+        transition: all 0.7s ease;
+        width:0;
+        }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+        }}
+
+    .order{
+    font-weight: bold;
+    color: #000000;
+    background-color:#e8e8e8;
+    border: none;
+    border-radius: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 26%;
+    margin-right: 5%;
+    box-shadow:6px 6px 12px #322e2e;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    transition: all 0.3s;
+    }
+    .order:hover{
+        background-color: rgb(26, 25, 26);
+        color: rgb(227, 213, 213);
+        box-shadow: inset 4px 4px 14px rgb(0, 0, 0,0.6);
+        box-shadow: -6px -6px 12px #eedfed,6px 6px 12px #121111;
+    }
+    .body{
+        margin: 0;
+        padding: 0;
+        min-height: 90em;
+        background: #2f2f2f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: consolas;   
+    }
+
+    .container {
+        width: 80em;
+        position: relative;
+        display: grid;
+        justify-content: space-between;
+        column-gap: 5px;
+        grid-template-columns: 2fr 2fr 2fr 1fr;
+        row-gap: 15px;
+        align-items: center;
+        margin-top: 98px;
+    }
+
+    .container .card {
+        position: relative;
+    }
+
+    .container .card .face {
+        width: 300px;
+        height: 200px;
+        transition: 0.5s;
+    }
+
+    .container .card .face.face1 {
+        position: relative;
+        background: #2f2e2e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index:1;
+        transform: translateY(100px);
+    }
+
+    .container .card:hover .face.face1{
+        transform: translateY(0px);
+        background:rgb(0, 0, 0);
+        object-fit: cover;
+    }
+
+    .container .card .face.face1 .content{
+        
+        transition: 0.5s;
+    }
+
+    .container .card :hover .face.face1 .content{
+        opacity: 1;
+    }
+    .container .card .face.face1 .content img{
+        min-width: 100px;
+    }
+
+    .container .card .face.face1 .content h3{
+        margin: 10px 0 0 ;
+        padding:0;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .container .card .face.face2 {
+        position: relative;
+        background: #5a5c54;
+        display: flex;
+        justify-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+        transform: translateY(-100px);
+    }
+
+    .container .card:hover .face.face2 {
+        transform: translateY(0);
+    }
+    .container .card .face.face2.content p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container .card .face.face2 .content a {
+        margin: 15px 0 0;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 900;
+        color: #333;
+        padding: 5px;
+        border: 1px solid #333;
+    }
+
+    .container .card .face.face2.content a:hover{
+        background: #0a0a0a;
+        color: #020101;
+    }
+    </style>
+</html>
